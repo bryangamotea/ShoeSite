@@ -1,5 +1,10 @@
 @import 'screen';
 
+body {
+	background-color: #cfcfcf;
+	font-family: ContrailOne-Regular;
+}
+
 #header{
 	background-image:url('../images/background.jpg');
 	padding:50px;	
@@ -21,4 +26,13 @@
 		top:20px;
 	}
 
+}
+
+.container {
+	width: 1000px;
+
+	.cont {
+		width: 700px;
+		margin:0 auto;
+	}
 }
