@@ -1,12 +1,15 @@
 @import 'screen';
 
 #header{
-	background-color:black;
+	background-image:url('../images/background.jpg');
 	padding:50px;	
+	height:100px;
 	
 	#nikeLogo{
 		height:100px;
 		width:300px;
+		position:relative;
+		top:-10px;
 	}
 	
 	#JustDoIt{
@@ -14,8 +17,8 @@
 		font-size:40pt;
 		font-weight: bolder;
 		position:relative;
-		left:-150px;
-		top:30px;
+		left:-180px;
+		top:20px;
 	}
 
 }

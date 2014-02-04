@@ -69,20 +69,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 3, ../sass/main.scss */
 #header {
-  background-color: black;
+  background-image: url("../images/background.jpg");
   padding: 50px;
+  height: 100px;
 }
-/* line 7, ../sass/main.scss */
+/* line 8, ../sass/main.scss */
 #header #nikeLogo {
   height: 100px;
   width: 300px;
+  position: relative;
+  top: -10px;
 }
-/* line 12, ../sass/main.scss */
+/* line 15, ../sass/main.scss */
 #header #JustDoIt {
   color: white;
   font-size: 40pt;
   font-weight: bolder;
   position: relative;
-  left: -150px;
-  top: 30px;
+  left: -180px;
+  top: 20px;
 }
