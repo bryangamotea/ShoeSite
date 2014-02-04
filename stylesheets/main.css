@@ -68,24 +68,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 3, ../sass/main.scss */
-#header {
-  background-image: url("../images/background.jpg");
-  padding: 50px;
-  height: 100px;
+body {
+  background-color: black;
 }
-/* line 8, ../sass/main.scss */
-#header #nikeLogo {
-  height: 100px;
-  width: 300px;
+/* line 5, ../sass/main.scss */
+body #players {
+  width: 960px;
+  height: 600px;
+  background-image: url("../images/backgroundindex2.jpg");
+  background-repeat: no-repeat;
+  margin: 0 auto;
   position: relative;
-  top: -10px;
+  top: 80px;
 }
 /* line 15, ../sass/main.scss */
-#header #JustDoIt {
-  color: white;
-  font-size: 40pt;
-  font-weight: bolder;
+body #LeBron {
+  height: 300px;
   position: relative;
-  left: -180px;
-  top: 20px;
+  left: 50px;
+  top: -60px;
+  display: none;
+}
+/* line 23, ../sass/main.scss */
+body #KD {
+  height: 400px;
+  position: relative;
+  left: 120px;
+  top: -65px;
+  display: none;
+}
+/* line 30, ../sass/main.scss */
+body #Kobe {
+  height: 400px;
+  position: relative;
+  left: 80px;
+  top: -10px;
+  display: none;
+}
+/* line 38, ../sass/main.scss */
+body #Some {
+  color: white;
+  font-weight: bolder;
+  font-size: 60pt;
+  position: relative;
+  top: -30px;
+  left: 90px;
+}
+/* line 48, ../sass/main.scss */
+body #logo {
+  height: 30px;
+  width: 100px;
+  position: relative;
+  top: -20px;
+  left: 430px;
+  opacity: 0.6;
 }
