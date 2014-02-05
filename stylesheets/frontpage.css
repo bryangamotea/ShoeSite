@@ -67,66 +67,87 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 4, ../sass/main.scss */
-h1 {
-  font-size: 30px;
-}
-
-/* line 6, ../sass/main.scss */
+/* line 3, ../sass/frontpage.scss */
 body {
-  font-family: ContrailOne-Regular;
   background-color: black;
 }
-
-/* line 11, ../sass/main.scss */
-#header {
-  background-image: url("../images/wallpaper.jpg");
-  background-position: 93px 2px;
-  padding: 50px;
-  height: 160px;
-  border: solid 2px white;
-}
-/* line 18, ../sass/main.scss */
-#header #nikeLogo {
-  height: 50px;
-  width: 140px;
-  position: absolute;
-  top: 20px;
-  left: 40px;
-}
-/* line 26, ../sass/main.scss */
-#header #JustDoIt {
-  position: absolute;
-  color: white;
-  left: 115px;
-  top: 53px;
-  font-size: 20px;
-}
-
-/* line 36, ../sass/main.scss */
-.container {
-  /*background-color:white;*/
-  width: 1000px;
-  margin-top: 20px;
-}
-/* line 41, ../sass/main.scss */
-.container .content {
-  text-align: center;
-  width: 700px;
+/* line 6, ../sass/frontpage.scss */
+body #players {
+  width: 960px;
+  height: 680px;
+  background-image: url("../images/backgroundindex2.jpg");
+  background-repeat: no-repeat;
   margin: 0 auto;
+  position: relative;
+  top: 80px;
+}
+/* line 17, ../sass/frontpage.scss */
+body a {
+  cursor: pointer;
+}
+/* line 20, ../sass/frontpage.scss */
+body #LeBron {
+  height: 300px;
+  position: relative;
+  left: 50px;
+  top: -60px;
+  display: none;
+}
+/* line 28, ../sass/frontpage.scss */
+body #LeBron2 {
+  height: 420px;
+  position: relative;
+  left: 90px;
+  top: -20px;
+  display: none;
+}
+/* line 36, ../sass/frontpage.scss */
+body #KD {
+  height: 400px;
+  position: relative;
+  left: 120px;
+  top: -65px;
+  display: none;
+}
+/* line 44, ../sass/frontpage.scss */
+body #KD2 {
+  height: 400px;
+  position: relative;
+  left: 120px;
+  top: -65px;
+  display: none;
+}
+/* line 52, ../sass/frontpage.scss */
+body #Kobe {
+  height: 400px;
+  position: relative;
+  width: 250px;
+  left: 120px;
+  top: -10px;
+  display: none;
+}
+/* line 61, ../sass/frontpage.scss */
+body #Kobe2 {
+  height: 420px;
+  position: relative;
+  left: 120px;
+  top: -10px;
+  display: none;
+}
+/* line 69, ../sass/frontpage.scss */
+body #Some {
   color: white;
+  font-size: 50pt;
+  font-weight: bolder;
+  position: relative;
+  left: 150px;
 }
-/* line 47, ../sass/main.scss */
-.container .content div {
-  display: inline-block;
-  margin: 40px 30px;
-  /*border: 1px solid;
-  border-radius: 50px;*/
+/* line 77, ../sass/frontpage.scss */
+body #logo {
+  height: 30px;
+  width: 100px;
+  position: relative;
+  left: 420px;
+  top: 15px;
+  opacity: 0.6;
 }
-/* line 52, ../sass/main.scss */
-.container .content div img {
-  border-radius: 70px;
-  border: 1px solid white;
-}
-
-/* Home.php style ======================*/

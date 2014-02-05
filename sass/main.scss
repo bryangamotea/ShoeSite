@@ -1,87 +1,61 @@
 @import 'screen';
 
-body{
-	background-color:black;
-	
-	#players{
-		width:960px;
-		height:680px;
-		background-image:url('../images/backgroundindex2.jpg');
-		background-repeat:no-repeat;
-		margin:0 auto;
-		position:relative;
-		top:80px;
 
-	}
+h1 {font-size: 30px}
 
-	a{
-		cursor:pointer;
-	}
-	#LeBron{
-		height:300px;
-		position:relative;
-		left:50px;
-		top:-60px;
-		display:none;
-	}
-
-	#LeBron2{
-		height:420px;
-		position:relative;
-		left:90px;
-		top:-20px;
-		display:none;
-	}
-
-	#KD{
-		height:400px;
-		position:relative;
-		left:120px;
-		top:-65px;
-		display:none;
-	}
-
-	#KD2{
-		height:400px;
-		position:relative;
-		left:120px;
-		top:-65px;
-		display:none;
-	}
-
-	#Kobe{
-		height:400px;
-		position:relative;
-		width:250px;
-		left:120px;
-		top:-10px;
-		display:none;
-	}
-
-	#Kobe2{
-		height:420px;
-		position:relative;
-		left:120px;
-		top:-10px;
-		display:none;
-	}
-
-	#Some{
-		color:white;
-		font-weight: bolder;
-		font-size:60pt;
-		position:relative;
-		top:-30px;
-		left:90px;
-
-	}
-	
-	#logo{
-		height:30px;
-		width:100px;
-		position:relative;
-		top:-20px;
-		left:430px;
-		opacity:0.6;
-	}
+body {
+	font-family: ContrailOne-Regular;
+	background-color: black;
 }
+
+#header {
+	background-image: url("../images/wallpaper.jpg");
+	background-position: 93px 2px;
+	padding: 50px;
+	height: 160px;
+	border: solid 2px white;
+
+	#nikeLogo{
+		height: 50px;
+		width: 140px;
+		position: absolute;
+		top: 20px;
+		left: 40px;
+	}
+
+	#JustDoIt {
+		position: absolute;
+		color: white;
+		left: 115px;
+		top: 53px;
+		font-size: 20px;
+	}
+
+}
+
+.container {
+	/*background-color:white;*/
+	width: 1000px;
+	margin-top: 20px;
+
+	.content {
+		text-align: center;
+		width: 700px;
+		margin:0 auto;
+		color:white;
+
+		div {
+			display: inline-block;
+			margin: 40px 30px;
+			/*border: 1px solid;
+			border-radius: 50px;*/
+			img {
+				border-radius: 70px;
+				border: 1px solid white;
+			}
+		}
+	}
+
+}
+
+/* Home.php style ======================*/
