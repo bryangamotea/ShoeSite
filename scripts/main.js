@@ -1,9 +1,9 @@
 $(document).ready(function(){
 	
 
-	$('#LeBron').fadeIn(2000);
-	$('#Kobe').fadeIn(4000);
-	$('#KD').fadeIn(6000);
+	$('#LeBron').fadeIn(1000);
+	$('#Kobe').fadeIn(3000);
+	$('#KD').fadeIn(5000);
 
 	$("#logo").mouseenter(function(){
 
