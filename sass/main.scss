@@ -1,38 +1,63 @@
 @import 'screen';
 
+
+/* Home.php style ======================*/
+
+h1 {font-size: 30px}
+
 body {
-	background-color: #cfcfcf;
 	font-family: ContrailOne-Regular;
+	background-color: black;
 }
 
-#header{
-	background-image:url('../images/background.jpg');
-	padding:50px;	
-	height:100px;
-	
+#header {
+	background-image: url("../images/wallpaper.jpg");
+	background-position: 93px 2px;
+	padding: 50px;
+	height: 160px;
+	border: solid 2px white;
+
 	#nikeLogo{
-		height:100px;
-		width:300px;
-		position:relative;
-		top:-10px;
+		height: 50px;
+		width: 140px;
+		position: absolute;
+		top: 20px;
+		left: 40px;
 	}
-	
-	#JustDoIt{
-		color:white;
-		font-size:40pt;
-		font-weight: bolder;
-		position:relative;
-		left:-180px;
-		top:20px;
+
+	#JustDoIt {
+		position: absolute;
+		color: white;
+		left: 115px;
+		top: 53px;
+		font-size: 20px;
 	}
 
 }
 
 .container {
+	/*background-color:white;*/
 	width: 1000px;
+	margin-top: 20px;
 
-	.cont {
+	.content {
+		text-align: center;
 		width: 700px;
 		margin:0 auto;
+		color:white;
+
+		div {
+			display: inline-block;
+			margin: 40px 30px;
+			/*border: 1px solid;
+			border-radius: 50px;*/
+			img {
+				border-radius: 70px;
+				border: 1px solid white;
+			}
+		}
 	}
+
 }
+
+/* Home.php style ======================*/
