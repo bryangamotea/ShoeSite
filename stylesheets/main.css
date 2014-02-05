@@ -71,17 +71,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   background-color: black;
 }
-/* line 5, ../sass/main.scss */
+/* line 6, ../sass/main.scss */
 body #players {
   width: 960px;
-  height: 600px;
+  height: 680px;
   background-image: url("../images/backgroundindex2.jpg");
   background-repeat: no-repeat;
   margin: 0 auto;
   position: relative;
   top: 80px;
 }
-/* line 15, ../sass/main.scss */
+/* line 17, ../sass/main.scss */
+body a {
+  cursor: pointer;
+}
+/* line 20, ../sass/main.scss */
 body #LeBron {
   height: 300px;
   position: relative;
@@ -89,7 +93,15 @@ body #LeBron {
   top: -60px;
   display: none;
 }
-/* line 23, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
+body #LeBron2 {
+  height: 420px;
+  position: relative;
+  left: 90px;
+  top: -20px;
+  display: none;
+}
+/* line 36, ../sass/main.scss */
 body #KD {
   height: 400px;
   position: relative;
@@ -97,15 +109,32 @@ body #KD {
   top: -65px;
   display: none;
 }
-/* line 30, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
+body #KD2 {
+  height: 400px;
+  position: relative;
+  left: 120px;
+  top: -65px;
+  display: none;
+}
+/* line 52, ../sass/main.scss */
 body #Kobe {
   height: 400px;
   position: relative;
-  left: 80px;
+  width: 250px;
+  left: 120px;
   top: -10px;
   display: none;
 }
-/* line 38, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
+body #Kobe2 {
+  height: 420px;
+  position: relative;
+  left: 120px;
+  top: -10px;
+  display: none;
+}
+/* line 69, ../sass/main.scss */
 body #Some {
   color: white;
   font-weight: bolder;
@@ -114,7 +143,7 @@ body #Some {
   top: -30px;
   left: 90px;
 }
-/* line 48, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 body #logo {
   height: 30px;
   width: 100px;
