@@ -17,7 +17,7 @@
 		<div class="container">
 			<div class="content">
 				<h1>Choose your game:</h1>
-				<div class="logos"><img src="images/KobeLogo.jpg" alt=""></div>
+				<div class="logos"><img src="images/KobeLogo.JPG" alt=""></div>
 				<div class="logos"><img src="images/lebronlogo2.jpg" alt=""></div>
 				<div class="logos"><img src="images/KDLogo.jpg" alt=""></div>
 			</div>

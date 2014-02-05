@@ -1,0 +1,83 @@
+@import 'screen';
+
+body{
+	background-color:black;
+	
+	#players{
+		width:960px;
+		height:680px;
+		background-image:url('../images/backgroundindex2.jpg');
+		background-repeat:no-repeat;
+		margin:0 auto;
+		position:relative;
+		top:80px;
+
+	}
+
+	#LeBron{
+		height:300px;
+		position:relative;
+		left:50px;
+		top:-60px;
+		display:none;
+	}
+
+	#LeBron2{
+		height:420px;
+		position:relative;
+		left:90px;
+		top:-20px;
+		display:none;
+	}
+
+
+	#KD{
+		height:400px;
+		position:relative;
+		left:120px;
+		top:-65px;
+		display:none;
+	}
+
+	#KD2{
+		height:400px;
+		position:relative;
+		left:120px;
+		top:-65px;
+		display:none;
+	}
+
+	#Kobe{
+		height:400px;
+		position:relative;
+		width:250px;
+		left:120px;
+		top:-10px;
+		display:none;
+	}
+
+	#Kobe2{
+		height:420px;
+		position:relative;
+		left:120px;
+		top:-10px;
+		display:none;
+	}
+
+	#Some{
+		color:white;
+		font-size:50pt;
+		font-weight:bolder;
+		position:relative;
+		left:150px;
+	}
+
+	#logo{
+		height:30px;
+		width:100px;
+		position:relative;
+		left:420px;
+		top:15px;
+		opacity:0.6;
+	}
+}
