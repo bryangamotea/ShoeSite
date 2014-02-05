@@ -17,7 +17,7 @@
 		</div>
 
 		<div class="container">
-			<form action="get">
+			<form action="" method = "get">
 				<label for="s_search">Search:</label>
 				<input type="text" name = "shoe_name" id = "s_search"><button class = "btn btn-warning">Submit</button>
 			</form>
