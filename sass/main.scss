@@ -6,6 +6,7 @@ h1 {font-size: 30px}
 body {
 	font-family: ContrailOne-Regular;
 	background-color: black;
+	color:white;
 }
 
 #header {
@@ -38,12 +39,20 @@ body {
 	/*background-color:white;*/
 	width: 100%;
 	margin-top: 20px;
+	
+	form {
+		position: absolute;
+		right: 50px;
+		#s_search {
+				border-radius: 10px;
+			}
+	}
 
 	.content {
 		text-align: center;
 		width: 700px;
 		margin:0 auto;
-		color:white;
+		/*color:white;*/
 
 		div {
 			display: inline-block;
