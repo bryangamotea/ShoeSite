@@ -19,7 +19,7 @@
 		<div class="container">
 			<form action="get">
 				<label for="s_search">Search:</label>
-				<input type="text" name = "shoe_name" id = "s_search"><button class = "btn btn-warning">Submit</button>
+				<input type="text" name = "shoe_name" id = "s_search"><button class = "btn btn-warning">Search</button>
 			</form>
 			<div class="content">
 				<h1>Choose your game:</h1>
