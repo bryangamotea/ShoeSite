@@ -15,6 +15,7 @@
 			$output = "No results found!";
 		} else {
 			$header = "<th>Shoe Name</th><th>Colorway</th><th>Price</th>";
+			
 			while ($row = mysql_fetch_array($query)) {
 				$name = $row['shoe_name'];
 				$cw = $row['shoe_cw'];
@@ -53,9 +54,9 @@
 			<div class="content">
 				<h1>Choose your game:</h1>
 				<form id = "brand_logo" action="home.php" method = "post">
-					<input type="image" src="images/KobeLogo.JPG" name = "kobe">
-					<input type="image" src="images/lebronlogo2.jpg" name = "lebron">
-					<input type="image" src="images/KDLogo.jpg" name = "kd">
+					<input type="button" name = "kobe" id = "kobe">
+					<input type="button" name = "lebron" id = "lebron">
+					<input type="button" name = "kd" id = "kd">
 				</form>
 			</div>
 

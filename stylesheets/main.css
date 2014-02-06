@@ -137,12 +137,33 @@ th {
   margin: 0 auto;
 }
 /* line 60, ../sass/main.scss */
-.container .content input {
+.container .content #kobe {
+  background: url("../images/KobeLogo.JPG");
+  height: 150px;
+  width: 150px;
   display: inline-block;
   margin: 40px 30px;
   border-radius: 100px;
 }
-/* line 67, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
+.container .content #lebron {
+  background: url("../images/lebronlogo2.jpg");
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  margin: 40px 30px;
+  border-radius: 100px;
+}
+/* line 78, ../sass/main.scss */
+.container .content #kd {
+  background: url("../images/KDLogo.jpg");
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  margin: 40px 30px;
+  border-radius: 100px;
+}
+/* line 88, ../sass/main.scss */
 .container .content_two {
   width: 350px;
   margin: 0 auto;

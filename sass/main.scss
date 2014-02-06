@@ -57,7 +57,28 @@ th { color: orange;}
 		width: 700px;
 		margin:0 auto;
 
-		input {
+		#kobe {
+			background: url("../images/KobeLogo.JPG");
+			height: 150px;
+			width: 150px;
+			display: inline-block;
+			margin: 40px 30px;
+			border-radius: 100px;
+		}
+
+		#lebron {
+			background: url("../images/lebronlogo2.jpg");
+			height: 150px;
+			width: 150px;
+			display: inline-block;
+			margin: 40px 30px;
+			border-radius: 100px;
+		}
+
+		#kd {
+			background: url("../images/KDLogo.jpg");
+			height: 150px;
+			width: 150px;
 			display: inline-block;
 			margin: 40px 30px;
 			border-radius: 100px;
