@@ -8,7 +8,7 @@
 		$searchq = $_POST['shoe_name'];
 		$searchq = preg_replace("#[^0-9a-z]#i","",$searchq);
 
-		$query = mysql_query("SELECT * FROM shoe_table WHERE category LIKE '%$searchq' " );
+		$query = mysql_query("SELECT * FROM shoe_table WHERE category LIKE '%$searchq%' OR shoe_name LIKE '%$searchq%' " );
 		$count = mysql_num_rows($query);
 
 		if ($count == 0) {
@@ -56,7 +56,7 @@
 				<div class="logos"><img src="images/KobeLogo.JPG" alt=""></div>
 				<div class="logos"><img src="images/lebronlogo2.jpg" alt=""></div>
 				<div class="logos"><img src="images/KDLogo.jpg" alt=""></div>
-				<table class = "table" border = 1>
+				<table class = "table" border = >
 					<?php print($output); ?>
 				</table>
 
