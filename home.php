@@ -1,7 +1,7 @@
 <?php
-	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
+	$con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
 
-	mysql_select_db("shoesdb") or die("Could not find database!");
+	mysql_select_db("shoesdatabase") or die("Could not find database!");
 
 
 	if(isset($_POST['shoe_name'])) {
@@ -56,7 +56,7 @@
 				<div class="logos"><img src="images/KobeLogo.JPG" alt=""></div>
 				<div class="logos"><img src="images/lebronlogo2.jpg" alt=""></div>
 				<div class="logos"><img src="images/KDLogo.jpg" alt=""></div>
-				<table class = "table" border = 1>
+				<table class="table">
 					<?php print($output); ?>
 				</table>
 
