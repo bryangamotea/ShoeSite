@@ -1,4 +1,32 @@
- <html>
+<?php
+	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
+
+	mysql_select_db("shoesdb") or die("Could not find database!");
+
+
+	if(isset($_POST['shoe_name'])) {
+		$searchq = $_POST['shoe_name'];
+		$searchq = preg_replace("#[^0-9a-z]#i","",$searchq);
+
+		$query = mysql_query("SELECT * FROM shoe_table WHERE category LIKE '%$searchq' " );
+		$count = mysql_num_rows($query);
+
+		if ($count == 0) {
+			$output = "No results found!";
+		} else {
+			while ($row = mysql_fetch_array($query)) {
+				$name = $row['shoe_name'];
+				$cw = $row['shoe_cw'];
+				$price = $row['shoe_price'];
+
+
+				$output .= "<tr><td>" . $name . "</td>" . "<td>" . $cw . "</td>" . "<td>" . $price . "</td></tr>";
+			}
+		}
+	}
+	// print($output);
+	?>
+<html>
 	<head>
 		<title>Nike</title>
 		<link rel="stylesheet" href="stylesheets/main.css">
@@ -17,16 +45,23 @@
 		</div>
 
 		<div class="container">
-			<form action="" method = "get">
+
+			<form name = "search" action="home.php" method = "post">
 				<label for="s_search">Search:</label>
-				<input type="text" name = "shoe_name" id = "s_search"><button class = "btn btn-warning">Search</button>
+				<input type="text" name = "shoe_name" id = "s_search"><input type="submit" value="SUBMIT">
 			</form>
+
 			<div class="content">
 				<h1>Choose your game:</h1>
 				<div class="logos"><img src="images/KobeLogo.JPG" alt=""></div>
 				<div class="logos"><img src="images/lebronlogo2.jpg" alt=""></div>
 				<div class="logos"><img src="images/KDLogo.jpg" alt=""></div>
+				<table class = "table" border = 1>
+					<?php print($output); ?>
+				</table>
+
 			</div>
+
 		</div>
 	</body>
 </html>
