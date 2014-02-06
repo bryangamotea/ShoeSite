@@ -81,7 +81,7 @@ body {
 
 /* line 12, ../sass/main.scss */
 td {
-  padding: 20px;
+  padding: 10px 0px;
 }
 
 /* line 14, ../sass/main.scss */
@@ -153,11 +153,6 @@ th {
 .container .content_two {
   width: 350px;
   margin: 0 auto;
-}
-
-/* line 80, ../sass/main.scss */
-.table {
-  border: 1px solid white;
 }
 
 /* Home.php style ======================*/
