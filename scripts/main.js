@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	
-
 	$('#LeBron').fadeIn(1000);
 	$('#Kobe').fadeIn(3000);
 	$('#KD').fadeIn(5000);
@@ -56,6 +55,5 @@ $(document).ready(function(){
 		$('#Kobe').fadeIn(600);
 
 	});
-
 
 });
