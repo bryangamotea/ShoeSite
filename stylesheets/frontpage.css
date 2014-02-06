@@ -107,30 +107,31 @@ body #KD {
 }
 /* line 42, ../sass/frontpage.scss */
 body #KD2 {
-  height: 400px;
+  height: 450px;
   position: relative;
-  left: 120px;
-  top: -65px;
+  left: 30px;
+  top: -30px;
   display: none;
+  padding: 0;
 }
-/* line 50, ../sass/frontpage.scss */
+/* line 51, ../sass/frontpage.scss */
 body #Kobe {
   height: 400px;
   position: relative;
   width: 250px;
-  left: 120px;
+  left: 70px;
   top: -10px;
   display: none;
 }
-/* line 59, ../sass/frontpage.scss */
+/* line 60, ../sass/frontpage.scss */
 body #Kobe2 {
   height: 420px;
   position: relative;
   left: 120px;
-  top: -10px;
+  top: -40px;
   display: none;
 }
-/* line 67, ../sass/frontpage.scss */
+/* line 68, ../sass/frontpage.scss */
 body #Some {
   color: white;
   font-size: 50pt;
@@ -138,7 +139,7 @@ body #Some {
   position: relative;
   left: 150px;
 }
-/* line 75, ../sass/frontpage.scss */
+/* line 76, ../sass/frontpage.scss */
 body #logo {
   height: 30px;
   width: 100px;

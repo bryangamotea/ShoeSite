@@ -29,18 +29,18 @@ $(document).ready(function(){
 
 	});
 
-	// $('#KD').mouseenter(function(){
+	$('#KD').mouseenter(function(){
 
-	// 	$(this).hide();
-	// 	$('#KD2').fadeIn(600);
-	// });
+		$(this).hide();
+		$('#KD2').fadeIn(600);
+	});
 
-	// $('#KD2').mouseleave(function(){
+	$('#KD2').mouseleave(function(){
 
-	// 	$(this).hide();
-	// 	$('#KD').fadeIn(600);
+		$(this).hide();
+		$('#KD').fadeIn(600);
 
-	// });
+	});
 
 
 	$('#Kobe').mouseenter(function(){
