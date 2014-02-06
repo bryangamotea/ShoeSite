@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	
-
 	$('#LeBron').fadeIn(1000);
 	$('#Kobe').fadeIn(3000);
 	$('#KD').fadeIn(5000);
@@ -30,18 +29,18 @@ $(document).ready(function(){
 
 	});
 
-	// $('#KD').mouseenter(function(){
+	$('#KD').mouseenter(function(){
 
-	// 	$(this).hide();
-	// 	$('#KD2').fadeIn(600);
-	// });
+		$(this).hide();
+		$('#KD2').fadeIn(600);
+	});
 
-	// $('#KD2').mouseleave(function(){
+	$('#KD2').mouseleave(function(){
 
-	// 	$(this).hide();
-	// 	$('#KD').fadeIn(600);
+		$(this).hide();
+		$('#KD').fadeIn(600);
 
-	// });
+	});
 
 
 	$('#Kobe').mouseenter(function(){
@@ -56,6 +55,5 @@ $(document).ready(function(){
 		$('#Kobe').fadeIn(600);
 
 	});
-
 
 });
