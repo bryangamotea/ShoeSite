@@ -9,7 +9,7 @@ body {
 	color:white;
 }
 
-td { padding:20px;}
+td { padding:10px 0px;}
 
 th { color: orange;}
 
@@ -44,7 +44,7 @@ th { color: orange;}
 	width: 100%;
 	margin-top: 20px;
 	
-	form {
+	#search {
 		position: absolute;
 		right: 50px;
 		#s_search {
@@ -56,17 +56,11 @@ th { color: orange;}
 		text-align: center;
 		width: 700px;
 		margin:0 auto;
-		/*color:white;*/
 
-		div {
+		input {
 			display: inline-block;
 			margin: 40px 30px;
-			/*border: 1px solid;
-			border-radius: 50px;*/
-			img {
-				border-radius: 70px;
-				border: 1px solid white;
-			}
+			border-radius: 100px;
 		}
 	}
 
@@ -76,4 +70,5 @@ th { color: orange;}
 	}
 
 }
+
 /* Home.php style ======================*/
