@@ -80,6 +80,16 @@ body {
 }
 
 /* line 12, ../sass/main.scss */
+td {
+  padding: 20px;
+}
+
+/* line 14, ../sass/main.scss */
+th {
+  color: orange;
+}
+
+/* line 16, ../sass/main.scss */
 #header {
   background-image: url("../images/wallpaper.jpg");
   background-position: 93px 2px;
@@ -88,7 +98,7 @@ body {
   border: solid 2px white;
   background-repeat: no-repeat;
 }
-/* line 20, ../sass/main.scss */
+/* line 24, ../sass/main.scss */
 #header #nikeLogo {
   height: 50px;
   width: 140px;
@@ -96,7 +106,7 @@ body {
   top: 20px;
   left: 40px;
 }
-/* line 28, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 #header #JustDoIt {
   position: absolute;
   color: white;
@@ -105,42 +115,47 @@ body {
   font-size: 20px;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 .container {
   /*background-color:white;*/
   width: 100%;
   margin-top: 20px;
 }
-/* line 43, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .container form {
   position: absolute;
   right: 50px;
 }
-/* line 46, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 .container form #s_search {
   border-radius: 10px;
 }
-/* line 51, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 .container .content {
   text-align: center;
   width: 700px;
   margin: 0 auto;
   /*color:white;*/
 }
-/* line 57, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .container .content div {
   display: inline-block;
   margin: 40px 30px;
   /*border: 1px solid;
   border-radius: 50px;*/
 }
-/* line 62, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 .container .content div img {
   border-radius: 70px;
   border: 1px solid white;
 }
+/* line 73, ../sass/main.scss */
+.container .content_two {
+  width: 350px;
+  margin: 0 auto;
+}
 
-/* line 71, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 .table {
   border: 1px solid white;
 }

@@ -56,10 +56,15 @@
 				<div class="logos"><img src="images/KobeLogo.JPG" alt=""></div>
 				<div class="logos"><img src="images/lebronlogo2.jpg" alt=""></div>
 				<div class="logos"><img src="images/KDLogo.jpg" alt=""></div>
-				<table class = "table" border = >
+			</div>
+
+			<div class="content_two">
+				<table>
+					<th>Shoe Name</th>
+					<th>Colorway</th>
+					<th>Price</th>
 					<?php print($output); ?>
 				</table>
-
 			</div>
 
 		</div>

@@ -9,6 +9,10 @@ body {
 	color:white;
 }
 
+td { padding:20px;}
+
+th { color: orange;}
+
 #header {
 	background-image: url("../images/wallpaper.jpg");
 	background-position: 93px 2px;
@@ -64,6 +68,11 @@ body {
 				border: 1px solid white;
 			}
 		}
+	}
+
+	.content_two {
+		width: 350px;
+		margin: 0 auto;
 	}
 
 }
