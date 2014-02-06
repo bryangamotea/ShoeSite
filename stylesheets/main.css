@@ -122,12 +122,12 @@ th {
   margin-top: 20px;
 }
 /* line 47, ../sass/main.scss */
-.container form {
+.container #search {
   position: absolute;
   right: 50px;
 }
 /* line 50, ../sass/main.scss */
-.container form #s_search {
+.container #search #s_search {
   border-radius: 10px;
 }
 /* line 55, ../sass/main.scss */
@@ -135,21 +135,14 @@ th {
   text-align: center;
   width: 700px;
   margin: 0 auto;
-  /*color:white;*/
 }
-/* line 61, ../sass/main.scss */
-.container .content div {
+/* line 60, ../sass/main.scss */
+.container .content input {
   display: inline-block;
   margin: 40px 30px;
-  /*border: 1px solid;
-  border-radius: 50px;*/
+  border-radius: 100px;
 }
-/* line 66, ../sass/main.scss */
-.container .content div img {
-  border-radius: 70px;
-  border: 1px solid white;
-}
-/* line 73, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 .container .content_two {
   width: 350px;
   margin: 0 auto;
