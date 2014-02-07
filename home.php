@@ -66,7 +66,7 @@
 					?>
 				</table>
 			</div>
-
+<!-- pogi -->
 		</div>
 	</body>
 </html>
