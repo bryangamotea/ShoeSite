@@ -1,19 +1,17 @@
 <?php
-	$con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
+	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
 
-	mysql_select_db("shoesdatabase") or die("Could not find database!");
+	mysql_select_db("shoesdb") or die("Could not find database!");
 
 
 	if(isset($_POST['shoe_name'])) {
 		$searchq = $_POST['shoe_name'];
 		$searchq = preg_replace("#[^0-9a-z]#i","",$searchq);
-
-		$query = mysql_query("SELECT * FROM shoe_table WHERE category LIKE '%$searchq%' OR shoe_name LIKE '%$searchq%' " );
-		$count = mysql_num_rows($query);
-
-		if ($count == 0 OR $searchq = " ") {
-			$output = "No results found!";
+		if ($searchq == null ) {
+		$output = "No results found!";
 		} else {
+			$query = mysql_query("SELECT * FROM shoe_table WHERE category LIKE '%$searchq%' OR shoe_name LIKE '%$searchq%' " );
+			$count = mysql_num_rows($query);
 			$header = "<th>Shoe Name</th><th>Colorway</th><th>Price</th>";
 			
 			while ($row = mysql_fetch_array($query)) {
@@ -24,8 +22,8 @@
 
 				$output .= "<tr><td>" . $name . "</td>" . "<td>" . $cw . "</td>" . "<td>" . $price . "</td></tr>";
 			}
-		}
 	}
+}
 ?>
 <html>
 	<head>
