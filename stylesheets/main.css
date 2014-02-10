@@ -124,7 +124,7 @@ th {
 /* line 47, ../sass/main.scss */
 .container #search {
   position: absolute;
-  right: 50px;
+  left: 50px;
 }
 /* line 50, ../sass/main.scss */
 .container #search #s_search {

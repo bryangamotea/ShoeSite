@@ -1,7 +1,7 @@
 <?php
-	$con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
+	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
 
-	mysql_select_db("shoesdatabase") or die("Could not find database!");
+	mysql_select_db("shoesdb") or die("Could not find database!");
 
 
 	if(isset($_POST['shoe_name'])) {
@@ -14,18 +14,17 @@
 			$count = mysql_num_rows($query);
 			if($count == 0){
 				$output = "No results found!";
-			}
-			else{
-			$header = "<th>Shoe Name</th><th>Colorway</th><th>Price</th>";
-			
-			while ($row = mysql_fetch_array($query)) {
-				$name = $row['shoe_name'];
-				$cw = $row['shoe_cw'];
-				$price = $row['shoe_price'];
+			} else {
+				$header = "<th>Shoe Name</th><th>Colorway</th><th>Price</th>";
+				
+				while ($row = mysql_fetch_array($query)) {
+					$name = $row['shoe_name'];
+					$cw = $row['shoe_cw'];
+					$price = $row['shoe_price'];
 
 
-				$output .= "<tr><td>" . $name . "</td>" . "<td>" . $cw . "</td>" . "<td>" . $price . "</td></tr>";
-			}
+					$output .= "<tr><td>" . $name . "</td>" . "<td>" . $cw . "</td>" . "<td>" . $price . "</td></tr>";
+				}
 			}
 		}
 	}
