@@ -56,4 +56,15 @@ $(document).ready(function(){
 
 	});
 
+	$("#LoginButton").click(function(){
+
+		$("#Register").hide();
+		$("#Login").toggle(1000);
+	});
+
+	$("#RegisterButton").click(function(){
+		$("#Login").hide();
+		$("#Register").toggle(1000);
+	});
+
 });

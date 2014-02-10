@@ -45,11 +45,53 @@ th { color: orange;}
 	margin-top: 20px;
 	
 	#search {
-		position: absolute;
-		right: 50px;
+		/*position: absolute;
+		right: 50px;*/
+		float:left;
 		#s_search {
 				border-radius: 10px;
 			}
+	}
+	
+	
+	#LoginButton{
+	position:relative;
+	left:950px;
+	top:-20px;
+	width:50px;
+	}
+
+	#RegisterButton{
+	position:relative;
+	left:1020px;
+	top:-35px;
+	width:50px;
+	}
+	
+
+	#Login{
+		background-color:white;
+		border-radius:10px;
+		color:black;
+		height:150px;
+		width:250px;
+		text-align: center;
+		position:absolute;
+		left:850px;
+		display:none;
+	}
+
+	#Register{
+		background-color:white;
+		border-radius:10px;
+		color:black;
+		height:150px;
+		width:250px;
+		text-align: center;
+		position:absolute;
+		left:900px;
+		display:none;
+
 	}
 
 	.content {
