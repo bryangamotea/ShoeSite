@@ -15,15 +15,16 @@
 			if($count == 0){
 				$output = "No results found!";
 			} else {
-				$header = "<th>Shoe Name</th><th>Colorway</th><th>Price</th>";
+				$header = "<th>Shoe Name</th><th>Colorway</th><th>Price</th><th>Picture</th>";
 				
 				while ($row = mysql_fetch_array($query)) {
 					$name = $row['shoe_name'];
 					$cw = $row['shoe_cw'];
 					$price = $row['shoe_price'];
+					$pic = $row['shoe_pic'];
  
 
-					$output .= "<tr><td>" . $name . "</td>" . "<td>" . $cw . "</td>" . "<td>" . $price . "</td></tr>";
+					$output .= "<tr><td>" . $name . "</td>" . "<td>" . $cw . "</td>" . "<td>" . $price . "</td>" . "<td><img src='$pic'></td></tr>";
 				}
 			}
 		}
