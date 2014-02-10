@@ -10,7 +10,7 @@
 		if ($searchq == null ) {
 		$output = "No results found!";
 		} else {
-			$query = mysql_query("SELECT * FROM shoe_table WHERE category LIKE '%$searchq%' OR shoe_name LIKE '%$searchq%' " );
+			$query = mysql_query("SELECT * FROM shoe_table WHERE category LIKE '%$searchq%' OR shoe_name LIKE '%$searchq%' ");
 			$count = mysql_num_rows($query);
 			if($count == 0){
 				$output = "No results found!";
@@ -21,25 +21,28 @@
 					$name = $row['shoe_name'];
 					$cw = $row['shoe_cw'];
 					$price = $row['shoe_price'];
-
+ 
 
 					$output .= "<tr><td>" . $name . "</td>" . "<td>" . $cw . "</td>" . "<td>" . $price . "</td></tr>";
 				}
 			}
 		}
 	}
-	if(!empty($_POST['uName'])){
-			$sql = "INSERT INTO user (Username,Password,Email)
-			VALUES
-			('$_POST[uName]','$_POST[pWord]','$_POST[Email]')";
-		
-			if(!mysql_query($sql,$con))
-	  		{
-	  			die('Error: ' . mysql_error());
-	  		}
+
+	if(!empty($_POST['uName'])) {
+		$sql = "INSERT INTO user (Username,Password,Email)
+		VALUES
+		('$_POST[uName]','$_POST[pWord]','$_POST[Email]')";
+	
+		if(!mysql_query($sql,$con)){
+  		die('Error: ' . mysql_error());
+  	}
 	}
-		mysql_close($con)
+	
+	mysql_close($con)
+
 ?>
+
 <html>
 	<head>
 		<title>Nike</title>
@@ -112,7 +115,6 @@
 					?>
 				</table>
 			</div>
-<!-- pogi -->
 		</div>
 	</body>
 </html>
