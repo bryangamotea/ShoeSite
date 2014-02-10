@@ -1,7 +1,7 @@
 <?php
-	$con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
+	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
 
-	mysql_select_db("shoesdatabase") or die("Could not find database!");
+	mysql_select_db("shoesdb") or die("Could not find database!");
 
 
 	if(isset($_POST['shoe_name'])) {
@@ -30,14 +30,13 @@
 	}
 
 	if(!empty($_POST['uName'])){
-			$sql = "INSERT INTO user (Username,Password,Email)
-			VALUES
-			('$_POST[uName]','$_POST[pWord]','$_POST[Email]')";
-		
-			if(!mysql_query($sql,$con))
-	  		{
-	  			die('Error: ' . mysql_error());
-	  		}
+		$sql = "INSERT INTO utable (Username,Password,Email)
+		VALUES
+		('$_POST[uName]','$_POST[pWord]','$_POST[Email]')";
+	
+		if(!mysql_query($sql,$con)){
+  		die('Error: ' . mysql_error());
+  	}
 	}
 
 	ob_start();
@@ -58,10 +57,13 @@
 		header("location:login_success.php");
 	}
 	else {
-	$errmsg = "Wrong Username/Password!";
+		$errmsg = "Wrong Username/Password!";
 	}
+
 	ob_end_flush();
-		mysql_close($con)
+	
+	mysql_close($con)
+
 ?>
 
 <html>
@@ -83,7 +85,7 @@
 
 		<div class="container">
 
-			<form id = "search"name = "search" action="home.php" method = "post">
+			<form id = "search" name = "search" action="home.php" method = "post">
 				<label for="s_search">Search:</label>
 				<input type="text" name = "shoe_name" id = "s_search"><input type="submit" value="SUBMIT">
 			</form>
