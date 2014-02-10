@@ -1,7 +1,7 @@
 <?php
-	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
+	$con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
 
-	mysql_select_db("shoesdb") or die("Could not find database!");
+	mysql_select_db("shoesdatabase") or die("Could not find database!");
 
 
 	if(isset($_POST['shoe_name'])) {
@@ -28,6 +28,8 @@
 			}
 		}
 	}
+	
+
 	if(!empty($_POST['uName'])){
 			$sql = "INSERT INTO user (Username,Password,Email)
 			VALUES
@@ -38,6 +40,28 @@
 	  			die('Error: ' . mysql_error());
 	  		}
 	}
+
+	ob_start();
+	$acctUsername=$_POST['Username']; 
+	$acctPassword=$_POST['Password'];
+
+	$acctUsername = stripslashes($acctUsername);
+	$acctPassword = stripslashes($acctPassword);
+	$acctUsername = mysql_real_escape_string($acctUsername);
+	$acctPassword = mysql_real_escape_string($acctPassword);
+	$sql="SELECT * FROM user WHERE Username='$acctUsername' and Password='$acctPassword'";
+	$result=mysql_query($sql);
+
+	$countUname=mysql_num_rows($result);
+	if($countUname==1){
+		session_register("myusername");
+		session_register("mypassword"); 
+		header("location:login_success.php");
+	}
+	else {
+	$errmsg = "Wrong Username/Password!";
+	}
+	ob_end_flush();
 		mysql_close($con)
 ?>
 <html>
@@ -78,6 +102,9 @@
 					<br>
 					<br>
 					<input type="submit" value="Login">
+					<?php
+						print($errmsg);
+					?>
 				</form>
 
 				<form id="Register" name="Register" action="home.php" method="post">
