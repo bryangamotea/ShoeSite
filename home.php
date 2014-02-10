@@ -40,28 +40,43 @@
   	}
 	}
 
-	ob_start();
-	$acctUsername=$_POST['Username']; 
-	$acctPassword=$_POST['Password'];
+	// ob_start();
+	// $acctUsername=$_POST['Username']; 
+	// $acctPassword=$_POST['Password'];
 
-	$acctUsername = stripslashes($acctUsername);
-	$acctPassword = stripslashes($acctPassword);
-	$acctUsername = mysql_real_escape_string($acctUsername);
-	$acctPassword = mysql_real_escape_string($acctPassword);
-	$sql="SELECT * FROM user WHERE Username='$acctUsername' and Password='$acctPassword'";
-	$result=mysql_query($sql);
+	// $acctUsername = stripslashes($acctUsername);
+	// $acctPassword = stripslashes($acctPassword);
+	// $acctUsername = mysql_real_escape_string($acctUsername);
+	// $acctPassword = mysql_real_escape_string($acctPassword);
+	// $sql="SELECT * FROM user WHERE Username='$acctUsername' AND Password='$acctPassword'";
+	// $result=mysql_query($sql);
 
-	$countUname=mysql_num_rows($result);
-	if($countUname==1){
-		session_register("myusername");
-		session_register("mypassword"); 
-		header("location:login_success.php");
+	// $countUname=mysql_num_rows($result);
+	// if($countUname==1){
+	// 	session_register("myusername");
+	// 	session_register("mypassword"); 
+	// 	header("location:login_success.php");
+	// }
+	// else {
+	// 	$errmsg = "Wrong Username/Password!";
+	// }
+
+	// ob_end_flush();
+
+	if (isset($_POST['Username'])) {
+		$username = $_POST['Username'];
+		$password = $_POST['Password'];
+		$sql="SELECT * FROM utable WHERE Username ='$username' AND Password='$password' LIMIT 1";
+		$res = mysql_query($sql);
+
+		if(mysql_num_rows($res) == 1) {
+
+			$success = "Login Complete!";
+
+		} else {
+			$errmsg = "Wrong Username/Password!";
+		}
 	}
-	else {
-		$errmsg = "Wrong Username/Password!";
-	}
-
-	ob_end_flush();
 	
 	mysql_close($con)
 
@@ -107,6 +122,7 @@
 					<input type="submit" value="Login">
 					<?php
 						print($errmsg);
+						print($success);
 					?>
 				</form>
 
