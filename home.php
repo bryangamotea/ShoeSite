@@ -1,7 +1,7 @@
 <?php
-	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
+	$con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
 
-	mysql_select_db("shoesdb") or die("Could not find database!");
+	mysql_select_db("shoesdatabase") or die("Could not find database!");
 
 
 	if(isset($_POST['shoe_name'])) {
@@ -31,7 +31,7 @@
 	}
 
 	if(!empty($_POST['uName'])){
-		$sql = "INSERT INTO utable (Username,Password,Email)
+		$sql = "INSERT INTO user (Username,Password,Email)
 		VALUES
 		('$_POST[uName]','$_POST[pWord]','$_POST[Email]')";
 	
