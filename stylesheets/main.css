@@ -81,15 +81,15 @@ body {
 
 /* line 12, ../sass/main.scss */
 td {
-  padding: 10px 0px;
+  padding: 10px 5px;
 }
 
-/* line 14, ../sass/main.scss */
+/* line 17, ../sass/main.scss */
 th {
   color: orange;
 }
 
-/* line 16, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 #header {
   background-image: url("../images/wallpaper.jpg");
   background-position: 93px 2px;
@@ -98,7 +98,7 @@ th {
   border: solid 2px white;
   background-repeat: no-repeat;
 }
-/* line 24, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 #header #nikeLogo {
   height: 50px;
   width: 140px;
@@ -106,7 +106,7 @@ th {
   top: 20px;
   left: 40px;
 }
-/* line 32, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 #header #JustDoIt {
   position: absolute;
   color: white;
@@ -115,21 +115,21 @@ th {
   font-size: 20px;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 .container {
   width: 100%;
   margin-top: 20px;
 }
-/* line 46, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 .container #search {
   position: absolute;
   left: 50px;
 }
-/* line 50, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 .container #search #s_search {
   border-radius: 10px;
 }
-/* line 56, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .container #LoginButton {
   	/*position:relative;
   	left:950px;
@@ -139,7 +139,7 @@ th {
   position: absolute;
   right: 300px;
 }
-/* line 66, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .container #RegisterButton {
   /*position:relative;
   left:1020px;
@@ -148,7 +148,7 @@ th {
   position: absolute;
   right: 200px;
 }
-/* line 77, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 .container #Login {
   background-color: white;
   border-radius: 10px;
@@ -161,7 +161,7 @@ th {
   top: 300px;
   display: none;
 }
-/* line 90, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .container #Register {
   background-color: white;
   border-radius: 10px;
@@ -174,13 +174,13 @@ th {
   top: 300px;
   display: none;
 }
-/* line 104, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 .container .content {
   text-align: center;
   width: 700px;
   margin: 0 auto;
 }
-/* line 109, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .container .content #kobe {
   background: url("../images/KobeLogo.JPG");
   height: 150px;
@@ -189,7 +189,7 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
-/* line 118, ../sass/main.scss */
+/* line 121, ../sass/main.scss */
 .container .content #lebron {
   background: url("../images/lebronlogo2.jpg");
   height: 150px;
@@ -198,7 +198,7 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
-/* line 127, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 .container .content #kd {
   background: url("../images/KDLogo.jpg");
   height: 150px;
@@ -207,7 +207,7 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
-/* line 137, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 .container .content_two {
   width: 350px;
   margin: 40px auto;
