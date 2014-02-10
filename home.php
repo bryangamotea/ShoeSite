@@ -28,12 +28,23 @@
 			}
 		}
 	}
+	if(!empty($_POST['uName'])){
+			$sql = "INSERT INTO user (Username,Password,Email)
+			VALUES
+			('$_POST[uName]','$_POST[pWord]','$_POST[Email]')";
+		
+			if(!mysql_query($sql,$con))
+	  		{
+	  			die('Error: ' . mysql_error());
+	  		}
+	}
+		mysql_close($con)
 ?>
 <html>
 	<head>
 		<title>Nike</title>
 		<link rel="stylesheet" href="stylesheets/main.css">
-		<link rel="shortcut icon" type="image/x-icon" href="images/NikeLogo2.png">
+		<link rel="shortcut icon" type="image/x-icon" href="images/nikeIcon.jpg">
 		<script src="scripts/jquery.js"></script>
 		<script src="scripts/bootstrap.js"></script>
 		<script src="scripts/main.js"></script>
@@ -52,6 +63,37 @@
 				<label for="s_search">Search:</label>
 				<input type="text" name = "shoe_name" id = "s_search"><input type="submit" value="SUBMIT">
 			</form>
+
+			<p id="LoginButton">Log in</p>
+			<p id="RegisterButton">Register</p>
+
+				<form id="Login" name="Login" action="home.php" method="post">
+					<label for="Login">Log in</label>
+					<br>
+					<br>
+					Username:<input type="text" name="Username" size="19" maxlength="10" required>
+					<br>
+					<br>
+					Password:<input type="password" name="Password" maxlength="6" required>
+					<br>
+					<br>
+					<input type="submit" value="Login">
+				</form>
+
+				<form id="Register" name="Register" action="home.php" method="post">
+					<label for="Register">Register</label>
+					<br>
+					<br>
+					Username:<input type="text" name="uName" size="19" maxlength="10" required>
+					<br>
+					Password:<input type="password" name="pWord" maxlength="6" required>
+					<br>
+					Email:<input type="text" name="Email" required>
+					<br>
+					<br>
+					<input type="submit" value="Register">
+				</form>
+			
 
 			<div class="content">
 				<h1>Choose your game:</h1>
