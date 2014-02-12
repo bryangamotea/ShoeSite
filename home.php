@@ -86,6 +86,7 @@
 	<head>
 		<title>Nike</title>
 		<link rel="stylesheet" href="stylesheets/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" type="image/x-icon" href="images/nikeIcon.jpg">
 		<script src="scripts/jquery.js"></script>
 		<script src="scripts/bootstrap.js"></script>
