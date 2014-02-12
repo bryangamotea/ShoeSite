@@ -57,14 +57,21 @@ $(document).ready(function(){
 	});
 
 	$("#LoginButton").click(function(){
-
+		$("#cart").hide();
 		$("#Register").hide();
 		$("#Login").toggle(1000);
 	});
 
 	$("#RegisterButton").click(function(){
 		$("#Login").hide();
+		$("#cart").hide();
 		$("#Register").toggle(1000);
+	});
+
+	$("#cartButton").click(function() {
+		$("#Login").hide();
+		$("#Register").hide();
+		$("#cart").toggle(1000);
 	});
 
 });

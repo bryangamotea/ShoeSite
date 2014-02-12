@@ -1,5 +1,30 @@
+/* Imports */
 @import 'screen';
 
+/* Mixins */
+@mixin popup {
+	background-color: white;
+	border-radius: 10px;
+	color: black;
+	padding: 10px;
+	text-align: center;
+	position: absolute;
+	top: 300px;
+	display:none;
+}
+
+@mixin playerlogo {
+	height: 150px;
+	width: 150px;
+	display: inline-block;
+	margin: 40px 30px;
+	border-radius: 100px;
+}
+
+@mixin LogRegCart($right) {
+	position: absolute;
+	right: $right;
+}
 
 h1 {font-size: 30px}
 
@@ -61,51 +86,34 @@ th { color: orange;
 	
 	
 	#LoginButton{
-	/*position:relative;
-	left:950px;
-	top:-20px;
-	width:50px;
-*/
-	position: absolute;
-	right: 300px;
+		@include LogRegCart(300px)
 	}
 
 	#RegisterButton{
-	/*position:relative;
-	left:1020px;
-	top:-35px;
-	width:50px;*/
+		@include LogRegCart(200px)
+	}
 
-	position: absolute;
-	right: 200px;
+	#cartButton {
+		@include LogRegCart(100px)
 	}
 	
 
 	#Login{
-		background-color: white;
-		border-radius: 10px;
-		color: black;
-		height: 150px;
-		width: 250px;
-		text-align: center;
-		position: absolute;
+		@include popup;
 		right: 195px;
-		top: 300px;
-		display:none;
+		margin-top: 10px;
 	}
 
 	#Register{
-		background-color: white;
-		border-radius: 10px;
-		color: black;
-		height: 150px;
-		width: 250px;
-		text-align: center;
-		position: absolute;
+		@include popup;
+		margin-top: 10px;
 		right: 100px;
-		top: 300px;
-		display:none;
+	}
 
+	#cart { 
+		@include popup;
+		margin-top: 10px;
+		right: 50px;
 	}
 
 	.content {
@@ -115,29 +123,17 @@ th { color: orange;
 
 		#kobe {
 			background: url("../images/KobeLogo.JPG");
-			height: 150px;
-			width: 150px;
-			display: inline-block;
-			margin: 40px 30px;
-			border-radius: 100px;
+			@include playerlogo;
 		}
 
 		#lebron {
 			background: url("../images/lebronlogo2.jpg");
-			height: 150px;
-			width: 150px;
-			display: inline-block;
-			margin: 40px 30px;
-			border-radius: 100px;
+			@include playerlogo;
 		}
 
 		#kd {
 			background: url("../images/KDLogo.jpg");
-			height: 150px;
-			width: 150px;
-			display: inline-block;
-			margin: 40px 30px;
-			border-radius: 100px;
+			@include playerlogo;
 		}
 	}
 

@@ -1,9 +1,13 @@
 <?php
 	$con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
 
+
+// connect to db
+	// $con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
+
 	mysql_select_db("shoesdatabase") or die("Could not find database!");
 
-
+// Search shoes
 	if(isset($_POST['shoe_name'])) {
 		$searchq = $_POST['shoe_name'];
 		$searchq = preg_replace("#[^0-9a-z]#i","",$searchq);
@@ -15,54 +19,36 @@
 			if($count == 0){
 				$output = "No results found!";
 			} else {
-				$header = "<th>Shoe Name</th><th>Colorway</th><th>Price</th><th>Picture</th>";
-				
+
+				$header = "<tr><th>Shoe I.D.</th><th>Shoe Name</th><th>Colorway</th><th>Price</th><th>Picture</th></tr>";
+
 				while ($row = mysql_fetch_array($query)) {
+					$id = $row['shoe_id'];
 					$name = $row['shoe_name'];
 					$cw = $row['shoe_cw'];
 					$price = $row['shoe_price'];
 					$pic = $row['shoe_pic'];
  
 
-					$output .= "<tr><td>" . $name . "</td>" . "<td>" . $cw . "</td>" . "<td>" . $price . "</td>" . "<td><img src='$pic'></td></tr>";
+					$output .= "<tr><td>". $id ."</td><td>" . $name . "</td><td>" . $cw . "</td><td>" . $price . "</td>" . "<td><img src='$pic'></td></tr>";
+
 				}
+
 			}
 		}
 	}
+// register
 
 	if(!empty($_POST['uName'])){
 		$sql = "INSERT INTO user (Username,Password,Email)
 		VALUES
 		('$_POST[uName]','$_POST[pWord]','$_POST[Email]')";
 	
-		if(!mysql_query($sql,$con)){
-  		die('Error: ' . mysql_error());
-  	}
+		if(!mysql_query($sql,$con)) {
+	  		die('Error: ' . mysql_error());
+	  	}
 	}
-
-	// ob_start();
-	// $acctUsername=$_POST['Username']; 
-	// $acctPassword=$_POST['Password'];
-
-	// $acctUsername = stripslashes($acctUsername);
-	// $acctPassword = stripslashes($acctPassword);
-	// $acctUsername = mysql_real_escape_string($acctUsername);
-	// $acctPassword = mysql_real_escape_string($acctPassword);
-	// $sql="SELECT * FROM user WHERE Username='$acctUsername' AND Password='$acctPassword'";
-	// $result=mysql_query($sql);
-
-	// $countUname=mysql_num_rows($result);
-	// if($countUname==1){
-	// 	session_register("myusername");
-	// 	session_register("mypassword"); 
-	// 	header("location:login_success.php");
-	// }
-	// else {
-	// 	$errmsg = "Wrong Username/Password!";
-	// }
-
-	// ob_end_flush();
-
+// Login
 	if (isset($_POST['Username'])) {
 		$username = $_POST['Username'];
 		$password = $_POST['Password'];
@@ -77,6 +63,10 @@
 			$errmsg = "Wrong Username/Password!";
 		}
 	}
+
+// Add to cart
+
+	if (isset($_POST['']))
 	
 	mysql_close($con)
 
@@ -107,8 +97,9 @@
 				<input type="text" name = "shoe_name" id = "s_search"><input type="submit" value="SUBMIT">
 			</form>
 
-			<p id="LoginButton">Log in</p>
-			<p id="RegisterButton">Register</p>
+			<span id="LoginButton">Log in</span>
+			<span id="RegisterButton">Register</span>
+			<span id="cartButton">Add To Cart</span>
 
 				<form id="Login" name="Login" action="home.php" method="post">
 					<label for="Login">Log in</label>
@@ -140,7 +131,12 @@
 					<br>
 					<input type="submit" value="Register">
 				</form>
-			
+
+				<form id = "cart" action="addCart.php" method = "post">
+					<label for="shoe_id">Shoe ID:</label>
+					<input type="text" size = "19" name = "shoe_id">
+					<input type="submit" value = "Add to Cart">
+				</form>
 
 			<div class="content">
 				<h1>Choose your game:</h1>
@@ -157,6 +153,7 @@
 					print($header);
 					print($output); 
 					?>
+
 				</table>
 			</div>
 		</div>
