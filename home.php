@@ -1,9 +1,11 @@
 <?php
+	$con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
+
 
 // connect to db
-	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
+	// $con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
 
-	mysql_select_db("shoesdb") or die("Could not find database!");
+	mysql_select_db("shoesdatabase") or die("Could not find database!");
 
 // Search shoes
 	if(isset($_POST['shoe_name'])) {
@@ -17,24 +19,28 @@
 			if($count == 0){
 				$output = "No results found!";
 			} else {
-				$header = "<tr><th>Shoe I.D.</th><th>Shoe Name</th><th>Colorway</th><th>Price</th></tr>";
-				
+
+				$header = "<tr><th>Shoe I.D.</th><th>Shoe Name</th><th>Colorway</th><th>Price</th><th>Picture</th></tr>";
+
 				while ($row = mysql_fetch_array($query)) {
 					$id = $row['shoe_id'];
 					$name = $row['shoe_name'];
 					$cw = $row['shoe_cw'];
 					$price = $row['shoe_price'];
+					$pic = $row['shoe_pic'];
  
 
-					$output .= "<tr><td>". $id ."</td><td>" . $name . "</td><td>" . $cw . "</td><td>" . $price . "</td></tr>";
+					$output .= "<tr><td>". $id ."</td><td>" . $name . "</td><td>" . $cw . "</td><td>" . $price . "</td>" . "<td><img src='$pic'></td></tr>";
+
 				}
+
 			}
 		}
 	}
 // register
 
 	if(!empty($_POST['uName'])){
-		$sql = "INSERT INTO utable (Username,Password,Email)
+		$sql = "INSERT INTO user (Username,Password,Email)
 		VALUES
 		('$_POST[uName]','$_POST[pWord]','$_POST[Email]')";
 	
@@ -73,6 +79,7 @@
 	<head>
 		<title>Nike</title>
 		<link rel="stylesheet" href="stylesheets/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" type="image/x-icon" href="images/nikeIcon.jpg">
 		<script src="scripts/jquery.js"></script>
 		<script src="scripts/bootstrap.js"></script>

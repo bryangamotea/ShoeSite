@@ -3,7 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -76,22 +76,25 @@ h1 {
 
 /* line 31, ../sass/main.scss */
 body {
-  font-family: ContrailOne-Regular;
+  font-family: ContrailOne-Regular,'Russo One',sans-serif;
   background-color: black;
   color: white;
 }
 
 /* line 37, ../sass/main.scss */
 td {
-  padding: 10px 5px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 th {
   color: orange;
+  padding-right: 20px;
+  text-align: center;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 #header {
   background-image: url("../images/wallpaper.jpg");
   background-position: 93px 2px;
@@ -100,7 +103,7 @@ th {
   border: solid 2px white;
   background-repeat: no-repeat;
 }
-/* line 52, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 #header #nikeLogo {
   height: 50px;
   width: 140px;
@@ -108,7 +111,7 @@ th {
   top: 20px;
   left: 40px;
 }
-/* line 60, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 #header #JustDoIt {
   position: absolute;
   color: white;
@@ -117,36 +120,36 @@ th {
   font-size: 20px;
 }
 
-/* line 70, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 .container {
   width: 100%;
   margin-top: 20px;
 }
-/* line 74, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .container #search {
   position: absolute;
   left: 50px;
 }
-/* line 78, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 .container #search #s_search {
   border-radius: 10px;
 }
-/* line 84, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 .container #LoginButton {
   position: absolute;
   right: 300px;
 }
-/* line 88, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .container #RegisterButton {
   position: absolute;
   right: 200px;
 }
-/* line 92, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .container #cartButton {
   position: absolute;
   right: 100px;
 }
-/* line 97, ../sass/main.scss */
+/* line 101, ../sass/main.scss */
 .container #Login {
   background-color: white;
   border-radius: 10px;
@@ -159,7 +162,7 @@ th {
   right: 195px;
   margin-top: 10px;
 }
-/* line 103, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 .container #Register {
   background-color: white;
   border-radius: 10px;
@@ -172,7 +175,7 @@ th {
   margin-top: 10px;
   right: 100px;
 }
-/* line 109, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .container #cart {
   background-color: white;
   border-radius: 10px;
@@ -185,13 +188,13 @@ th {
   margin-top: 10px;
   right: 50px;
 }
-/* line 115, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 .container .content {
   text-align: center;
   width: 700px;
   margin: 0 auto;
 }
-/* line 120, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 .container .content #kobe {
   background: url("../images/KobeLogo.JPG");
   height: 150px;
@@ -200,7 +203,7 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
-/* line 125, ../sass/main.scss */
+/* line 129, ../sass/main.scss */
 .container .content #lebron {
   background: url("../images/lebronlogo2.jpg");
   height: 150px;
@@ -209,7 +212,7 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
-/* line 130, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 .container .content #kd {
   background: url("../images/KDLogo.jpg");
   height: 150px;
@@ -218,7 +221,7 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
-/* line 136, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 .container .content_two {
   width: 350px;
   margin: 40px auto;

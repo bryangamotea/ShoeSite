@@ -29,17 +29,21 @@
 h1 {font-size: 30px}
 
 body {
-	font-family: ContrailOne-Regular;
+	font-family: ContrailOne-Regular,'Russo One',sans-serif;
 	background-color: black;
 	color:white;
 }
 
 td { 
-	padding:10px 5px;
+	padding-right:20px;
+	padding-top:20px;
 
 }
 
-th { color: orange;}
+th { color: orange;
+	padding-right:20px;
+	text-align:center;
+}
 
 #header {
 	background-image: url("../images/wallpaper.jpg");
