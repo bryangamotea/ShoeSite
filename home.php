@@ -1,11 +1,13 @@
 <?php
-	$con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
+	// $con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
 
 
 // connect to db
-	// $con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
+	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
 
-	mysql_select_db("shoesdatabase") or die("Could not find database!");
+	mysql_select_db("shoesdb") or die("Could not find database!");
+
+	// mysql_select_db("shoesdatabase") or die("Could not find database!");
 
 // Search shoes
 	if(isset($_POST['shoe_name'])) {
@@ -30,10 +32,9 @@
 					$pic = $row['shoe_pic'];
  
 
-					$output .= "<tr><td>". $id ."</td><td>" . $name . "</td><td>" . $cw . "</td><td>" . $price . "</td>" . "<td><img src='$pic'></td></tr>";
+					$output .= "<tr><td>". $id ."</td><td>" . $name . "</td><td>" . $cw . "</td><td>" . $price . "</td><td><img src='$pic'></td></tr>";
 
 				}
-
 			}
 		}
 	}
@@ -49,8 +50,10 @@
 	  	}
 	}
 // Login
+
+	session_start();
 	if (isset($_POST['Username'])) {
-		$username = $_POST['Username'];
+		$_SESSION['username'] = $_POST['Username'];
 		$password = $_POST['Password'];
 		$sql="SELECT * FROM utable WHERE Username ='$username' AND Password='$password' LIMIT 1";
 		$res = mysql_query($sql);
@@ -68,7 +71,20 @@
 
 	if (isset($_POST['shoe_id'])) {
 		$shoe_cart_id = $_POST['shoe_id'];
-		$query = "INSERT INTO shoe_in_cart ('"
+		$sql = "SELECT * FROM shoe_table WHERE shoe_id = '$shoe_cart_id' LIMIT 1";
+		$res = mysql_query($sql);
+		$uname = $_SESSION['username'];
+		$id = $row['shoe_id'];
+		$name = $row['shoe_name'];
+		$price = $row['shoe_price'];
+
+		if (mysql_num_rows($res) == 1) {
+			$querytwo = "INSERT INTO shoe_in_cart ('shoe_cart_id', 'username', 'shoe_id', 'shoe_name', 'shoe_price') VALUES ('1', '$uname' , '$id', '$name', '$price')";
+
+			if (!mysql_query($querytwo)) {
+				$_SESSION['error'] = "Error :". mysql_error();
+			}
+		}
 	}
 	
 	mysql_close($con)
