@@ -60,7 +60,10 @@
 
 // Add to cart
 
-	if (isset($_POST['']))
+	if (isset($_POST['shoe_id'])) {
+		$shoe_cart_id = $_POST['shoe_id'];
+		$query = "INSERT INTO shoe_in_cart ('"
+	}
 	
 	mysql_close($con)
 
