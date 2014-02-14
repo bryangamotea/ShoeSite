@@ -81,7 +81,7 @@
 		if (mysql_num_rows($res) == 1) {
 			$querytwo = "INSERT INTO shoe_in_cart ('shoe_cart_id', 'username', 'shoe_id', 'shoe_name', 'shoe_price') VALUES ('1', '$uname' , '$id', '$name', '$price')";
 
-			if (!mysql_query($querytwo)) {
+			if (!mysql_query($con,$querytwo)) {
 				$_SESSION['error'] = "Error :". mysql_error();
 			}
 		}
