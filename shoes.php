@@ -23,15 +23,17 @@
 ?>
 
 <div id="shoeContent">
-	<img id="shoeMamba" src=<?php print($_GET['pic1']) ?>>
-	<img id="shoeMamba2" src=<?php print($_GET['pic2']) ?>>
-	<img id="shoeMamba3" src=<?php print($_GET['pic3']) ?>>
-	<img id="shoeMamba5" src=<?php print($_GET['pic4']) ?>>
-	<h1>
-		<?php
-		print($_GET['category']);
-		?>
-	</h1>
+	<div class="col-lg-4">
+		<img  src=<?php print($_GET['pic1']) ?>>
+		<img  src=<?php print($_GET['pic2']) ?>>
+		<img  src=<?php print($_GET['pic3']) ?>>
+		<img  src=<?php print($_GET['pic4']) ?>>
+		<h1>
+			<?php
+			print($_GET['category']);
+			?>
+		</h1>
+	</div>
 	<table id="shoesTable">
 		<tr>
 		<?php
