@@ -185,22 +185,38 @@ th {
 .container #search #s_search {
   border-radius: 10px;
 }
+
 /* line 93, ../sass/main.scss */
+
+/* line 91, ../sass/main.scss */
+
 .container #LoginButton {
   position: absolute;
   right: 300px;
 }
+
 /* line 97, ../sass/main.scss */
+
+/* line 95, ../sass/main.scss */
+
 .container #RegisterButton {
   position: absolute;
   right: 200px;
 }
+
 /* line 101, ../sass/main.scss */
+
+/* line 99, ../sass/main.scss */
+
 .container #cartButton {
   position: absolute;
   right: 100px;
 }
+
 /* line 106, ../sass/main.scss */
+
+/* line 103, ../sass/main.scss */
+
 .container #Login {
   background-color: white;
   border-radius: 10px;
@@ -213,7 +229,11 @@ th {
   right: 195px;
   margin-top: 10px;
 }
+
 /* line 112, ../sass/main.scss */
+
+/* line 109, ../sass/main.scss */
+
 .container #Register {
   background-color: white;
   border-radius: 10px;
@@ -226,7 +246,11 @@ th {
   margin-top: 10px;
   right: 100px;
 }
+
 /* line 118, ../sass/main.scss */
+
+/* line 115, ../sass/main.scss */
+
 .container #cart {
   background-color: white;
   border-radius: 10px;
@@ -239,13 +263,21 @@ th {
   margin-top: 10px;
   right: 50px;
 }
+
 /* line 124, ../sass/main.scss */
+
+/* line 121, ../sass/main.scss */
+
 .container .content {
   text-align: center;
   width: 700px;
   margin: 0 auto;
 }
+
 /* line 129, ../sass/main.scss */
+
+/* line 126, ../sass/main.scss */
+
 .container .content #kobe {
   background: url("../images/KobeLogo.JPG");
   height: 150px;
@@ -254,7 +286,11 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
+
 /* line 134, ../sass/main.scss */
+
+/* line 131, ../sass/main.scss */
+
 .container .content #lebron {
   background: url("../images/lebronlogo2.jpg");
   height: 150px;
@@ -263,7 +299,11 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
+
 /* line 139, ../sass/main.scss */
+
+/* line 136, ../sass/main.scss */
+
 .container .content #kd {
   background: url("../images/KDLogo.jpg");
   height: 150px;
@@ -272,7 +312,11 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
+
 /* line 145, ../sass/main.scss */
+
+/* line 142, ../sass/main.scss */
+
 .container .content_two {
   text-align: center;
   width: 350px;
