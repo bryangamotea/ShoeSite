@@ -1,18 +1,8 @@
 <?php
 
-	// $con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
-
 session_start();
 
 include 'con.php';
-// 	// $con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
-
-// // connect to db
-// 	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
-
-// 	mysql_select_db("shoesdb") or die("Could not find database!");
-
-// 	// mysql_select_db("shoesdatabase") or die("Could not find database!");
 
 // Search shoes
 	if(isset($_POST['shoe_name'])) {
@@ -53,6 +43,7 @@ include 'con.php';
 	  		die('Error: ' . mysql_error());
 	  	}
 	}
+	
 // Login
 
 	if (isset($_POST['Username'])) {
