@@ -68,23 +68,23 @@ session_start();
 
 // Add to cart
 
-	// if (isset($_POST['shoes_id'])) {
-	// 	$shoe_cart_id = $_POST['shoes_id'];
-	// 	$sql = "SELECT * FROM shoe_table WHERE shoe_id = '$shoe_cart_id' LIMIT 1";
-	// 	$res = mysql_query($sql);
-	// 	$uname = $_SESSION['username'];
-	// 	$id = $row['shoe_id'];
-	// 	$name = $row['shoe_name'];
-	// 	$price = $row['shoe_price'];
+	if (isset($_POST['shoes_id'])) {
+		$shoe_cart_id = $_POST['shoes_id'];
+		$sql = "SELECT * FROM shoe_table WHERE shoe_id = '$shoe_cart_id' LIMIT 1";
+		$res = mysql_query($sql);
+		$uname = $_SESSION['username'];
+		$id = $row['shoe_id'];
+		$name = $row['shoe_name'];
+		$price = $row['shoe_price'];
 
-	// 	if (mysql_num_rows($sql)) {
-	// 		$querytwo = "INSERT INTO shoe_in_cart ('shoe_cart_id', 'username', 'shoe_id', 'shoe_name', 'shoe_price') VALUES ($uname' , '$shoe_cart_id', '$name', '$price')";
+		if (mysql_num_rows($sql)) {
+			$querytwo = "INSERT INTO shoe_in_cart ('shoe_cart_id', 'username', 'shoe_id', 'shoe_name', 'shoe_price') VALUES ($uname' , '$shoe_cart_id', '$name', '$price')";
 
-	// 		if (!mysql_query($con,$querytwo)) {
-	// 			$_SESSION['error'] = "Error :". mysql_error();
-	// 		}
-	// 	}
-	// }
+			if (!mysql_query($con,$querytwo)) {
+				$_SESSION['error'] = "Error :". mysql_error();
+			}
+		}
+	}
 	
 	mysql_close($con)
 
