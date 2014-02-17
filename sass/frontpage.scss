@@ -3,7 +3,7 @@
 body{
 	background-color:black;
 	
-	#players{
+	#containerIndex{
 		width:960px;
 		height:680px;
 		background-image:url('../images/backgroundindex2.jpg');
@@ -52,16 +52,15 @@ body{
 		height:400px;
 		position:relative;
 		width:250px;
-		left:70px;
+		left:105px;
 		top:-10px;
 		display:none;
 	}
 
 	#Kobe2{
-		height:420px;
+		height:400px;
 		position:relative;
-		left:120px;
-		top:-40px;
+		top:-25px;
 		display:none;
 	}
 

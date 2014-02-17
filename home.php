@@ -1,11 +1,11 @@
 <?php
-	// $con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
+	$con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
 
 
 // connect to db
-	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
+	// $con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
 
-	mysql_select_db("shoesdb") or die("Could not find database!");
+	mysql_select_db("shoesdatabase") or die("Could not find database!");
 
 	// mysql_select_db("shoesdatabase") or die("Could not find database!");
 
@@ -165,7 +165,7 @@
 					<input type="button" name = "kd" id = "kd">
 				</form>
 			</div>
-
+		
 			<div class="content_two">
 				<table>
 					<?php 

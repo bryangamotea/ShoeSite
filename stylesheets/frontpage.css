@@ -72,7 +72,7 @@ body {
   background-color: black;
 }
 /* line 6, ../sass/frontpage.scss */
-body #players {
+body #containerIndex {
   width: 960px;
   height: 680px;
   background-image: url("../images/backgroundindex2.jpg");
@@ -119,19 +119,18 @@ body #Kobe {
   height: 400px;
   position: relative;
   width: 250px;
-  left: 70px;
+  left: 105px;
   top: -10px;
   display: none;
 }
 /* line 60, ../sass/frontpage.scss */
 body #Kobe2 {
-  height: 420px;
+  height: 400px;
   position: relative;
-  left: 120px;
-  top: -40px;
+  top: -25px;
   display: none;
 }
-/* line 68, ../sass/frontpage.scss */
+/* line 67, ../sass/frontpage.scss */
 body #Some {
   color: white;
   font-size: 50pt;
@@ -139,7 +138,7 @@ body #Some {
   position: relative;
   left: 150px;
 }
-/* line 76, ../sass/frontpage.scss */
+/* line 75, ../sass/frontpage.scss */
 body #logo {
   height: 30px;
   width: 100px;

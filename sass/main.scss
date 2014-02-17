@@ -1,5 +1,6 @@
 /* Imports */
 @import 'screen';
+@import 'kobe';
 
 /* Mixins */
 @mixin popup {
@@ -142,6 +143,7 @@ th { color: orange;
 	}
 
 	.content_two {
+		text-align:center;
 		width: 350px;
 		margin: 40px auto;
 	}
