@@ -1,6 +1,7 @@
 <?php
-	// $con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
 
+session_start();
+	// $con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
 
 // connect to db
 	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
@@ -22,7 +23,7 @@
 				$output = "No results found!";
 			} else {
 
-				$header = "<tr><th>Shoe I.D.</th><th>Shoe Name</th><th>Colorway</th><th>Price</th><th>Picture</th></tr>";
+				$header = "<tr><th>Shoe I.D.</th><th>Shoe Name</th><th>Colorway</th><th>Price</th><th>Picture</th><th>Action</th></tr>";
 
 				while ($row = mysql_fetch_array($query)) {
 					$id = $row['shoe_id'];
@@ -32,8 +33,7 @@
 					$pic = $row['shoe_pic'];
  
 
-					$output .= "<tr><td>". $id ."</td><td>" . $name . "</td><td>" . $cw . "</td><td>" . $price . "</td><td><img src='$pic'></td></tr>";
-
+					$output .= "<tr><td>". $id ."</td><td>" . $name . "</td><td>" . $cw . "</td><td>" . $price . "</td><td><img src='$pic'></td><td><a href = '#'>Add to cart</td></tr>";
 				}
 			}
 		}
@@ -51,7 +51,6 @@
 	}
 // Login
 
-	session_start();
 	if (isset($_POST['Username'])) {
 		$_SESSION['username'] = $_POST['Username'];
 		$password = $_POST['Password'];
@@ -69,23 +68,23 @@
 
 // Add to cart
 
-	if (isset($_POST['shoe_id'])) {
-		$shoe_cart_id = $_POST['shoe_id'];
-		$sql = "SELECT * FROM shoe_table WHERE shoe_id = '$shoe_cart_id' LIMIT 1";
-		$res = mysql_query($sql);
-		$uname = $_SESSION['username'];
-		$id = $row['shoe_id'];
-		$name = $row['shoe_name'];
-		$price = $row['shoe_price'];
+	// if (isset($_POST['shoes_id'])) {
+	// 	$shoe_cart_id = $_POST['shoes_id'];
+	// 	$sql = "SELECT * FROM shoe_table WHERE shoe_id = '$shoe_cart_id' LIMIT 1";
+	// 	$res = mysql_query($sql);
+	// 	$uname = $_SESSION['username'];
+	// 	$id = $row['shoe_id'];
+	// 	$name = $row['shoe_name'];
+	// 	$price = $row['shoe_price'];
 
-		if (mysql_num_rows($res) == 1) {
-			$querytwo = "INSERT INTO shoe_in_cart ('shoe_cart_id', 'username', 'shoe_id', 'shoe_name', 'shoe_price') VALUES ('1', '$uname' , '$id', '$name', '$price')";
+	// 	if (mysql_num_rows($sql)) {
+	// 		$querytwo = "INSERT INTO shoe_in_cart ('shoe_cart_id', 'username', 'shoe_id', 'shoe_name', 'shoe_price') VALUES ($uname' , '$shoe_cart_id', '$name', '$price')";
 
-			if (!mysql_query($con,$querytwo)) {
-				$_SESSION['error'] = "Error :". mysql_error();
-			}
-		}
-	}
+	// 		if (!mysql_query($con,$querytwo)) {
+	// 			$_SESSION['error'] = "Error :". mysql_error();
+	// 		}
+	// 	}
+	// }
 	
 	mysql_close($con)
 
@@ -153,7 +152,7 @@
 
 				<form id = "cart" action="addCart.php" method = "post">
 					<label for="shoe_id">Shoe ID:</label>
-					<input type="text" size = "19" name = "shoe_id">
+					<input type="text" size = "19" name = "shoes_id">
 					<input type="submit" value = "Add to Cart">
 				</form>
 

@@ -140,22 +140,22 @@ th {
 .container #search #s_search {
   border-radius: 10px;
 }
-/* line 92, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .container #LoginButton {
   position: absolute;
   right: 300px;
 }
-/* line 96, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .container #RegisterButton {
   position: absolute;
   right: 200px;
 }
-/* line 100, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .container #cartButton {
   position: absolute;
   right: 100px;
 }
-/* line 105, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 .container #Login {
   background-color: white;
   border-radius: 10px;
@@ -168,7 +168,7 @@ th {
   right: 195px;
   margin-top: 10px;
 }
-/* line 111, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 .container #Register {
   background-color: white;
   border-radius: 10px;
@@ -181,7 +181,7 @@ th {
   margin-top: 10px;
   right: 100px;
 }
-/* line 117, ../sass/main.scss */
+/* line 115, ../sass/main.scss */
 .container #cart {
   background-color: white;
   border-radius: 10px;
@@ -194,13 +194,13 @@ th {
   margin-top: 10px;
   right: 50px;
 }
-/* line 123, ../sass/main.scss */
+/* line 121, ../sass/main.scss */
 .container .content {
   text-align: center;
   width: 700px;
   margin: 0 auto;
 }
-/* line 128, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .container .content #kobe {
   background: url("../images/KobeLogo.JPG");
   height: 150px;
@@ -209,7 +209,7 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
-/* line 133, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .container .content #lebron {
   background: url("../images/lebronlogo2.jpg");
   height: 150px;
@@ -218,7 +218,7 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
-/* line 138, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 .container .content #kd {
   background: url("../images/KDLogo.jpg");
   height: 150px;
@@ -227,7 +227,7 @@ th {
   margin: 40px 30px;
   border-radius: 100px;
 }
-/* line 144, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
 .container .content_two {
   width: 350px;
   margin: 40px auto;

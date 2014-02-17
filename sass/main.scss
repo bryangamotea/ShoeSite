@@ -86,8 +86,7 @@ th { color: orange;
 		#s_search {
 				border-radius: 10px;
 			}
-	}
-	
+	}	
 	
 	#LoginButton{
 		@include LogRegCart(300px)
@@ -100,7 +99,6 @@ th { color: orange;
 	#cartButton {
 		@include LogRegCart(100px)
 	}
-	
 
 	#Login{
 		@include popup;
