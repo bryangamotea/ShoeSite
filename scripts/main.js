@@ -1,14 +1,12 @@
 $(document).ready(function(){
 	
 	$('#LeBron').fadeIn(1000);
-	$('#Kobe').fadeIn(3000);
-	$('#KD').fadeIn(5000);
+	$('#Kobe').fadeIn(2000);
+	$('#KD').fadeIn(3000);
 
 	$("#logo").mouseenter(function(){
 
 		$(this).animate({opacity:'1'},900);
-
-
 	});
 
 	$("#logo").mouseleave(function(){
@@ -16,45 +14,79 @@ $(document).ready(function(){
 		$(this).animate({opacity:'0.6'},900);
 	});
 
-	$('#LeBron').mouseenter(function(){
-
-		$(this).hide();
+	$('#players').mouseenter(function(){
+		$('#LeBron').hide();
+		$('#KD').hide();
+		$('#Kobe').hide();
 		$('#LeBron2').fadeIn(800);
+		$('#Kobe2').fadeIn(800);
+		$('#KD2').fadeIn(800);
 	});
 
-	$('#LeBron2').mouseleave(function(){
-
-		$(this).hide();
+	$('#players').mouseleave(function(){
+		$('#LeBron2').hide();
+		$('#KD2').hide();
+		$('#Kobe2').hide();
 		$('#LeBron').fadeIn(800);
-
+		$('#Kobe').fadeIn(800);
+		$('#KD').fadeIn(800);
 	});
 
-	$('#KD').mouseenter(function(){
-
-		$(this).hide();
-		$('#KD2').fadeIn(600);
+	$('#kobe').click(function(){
+		$('#search').hide();
+		$.ajax({
+			url: "kobe.php",
+			data: {category:'Kobe',
+				   pic1:'images/shoeLogo.png',
+				   pic2:'images/shoe4.png',
+				   pic3:'images/shoe2.png',
+				   pic4:'images/mambamamba.png',
+					},
+			type:"GET",
+			success:function(result){
+				$('.content_two').html(result);
+		}});
 	});
 
-	$('#KD2').mouseleave(function(){
+	// $('#LeBron').mouseenter(function(){
 
-		$(this).hide();
-		$('#KD').fadeIn(600);
+	// 	$(this).hide();
+	// 	$('#LeBron2').fadeIn(800);
+	// });
 
-	});
+	// $('#LeBron2').mouseleave(function(){
+
+	// 	$(this).hide();
+	// 	$('#LeBron').fadeIn(800);
+
+	// });
+
+	// $('#KD').mouseenter(function(){
+
+	// 	$(this).hide();
+	// 	$('#KD2').fadeIn(600);
+	// });
+
+	// $('#KD2').mouseleave(function(){
+
+	// 	$(this).hide();
+	// 	$('#KD').fadeIn(600);
+
+	// });
 
 
-	$('#Kobe').mouseenter(function(){
+	// $('#Kobe').mouseenter(function(){
 
-		$(this).hide();
-		$('#Kobe2').fadeIn(600);
-	});
+	// 	$(this).hide();
+	// 	$('#Kobe2').fadeIn(600);
+	// });
 
-	$('#Kobe2').mouseleave(function(){
+	// $('#Kobe2').mouseleave(function(){
 
-		$(this).hide();
-		$('#Kobe').fadeIn(600);
+	// 	$(this).hide();
+	// 	$('#Kobe').fadeIn(600);
 
-	});
+	// });
 
 	$("#LoginButton").click(function(){
 		$("#cart").hide();
