@@ -1,16 +1,18 @@
 <?php
 
-	$con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
-
-session_start();
 	// $con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
 
-// connect to db
-	// $con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
+session_start();
 
-	mysql_select_db("shoesdatabase") or die("Could not find database!");
+include 'con.php';
+// 	// $con = mysql_connect("localhost","root","boinx1234825") or die("Could not connect!");
 
-	// mysql_select_db("shoesdatabase") or die("Could not find database!");
+// // connect to db
+// 	$con = mysql_connect("localhost","bryangamotea","bryangamotea26") or die("Could not connect!");
+
+// 	mysql_select_db("shoesdb") or die("Could not find database!");
+
+// 	// mysql_select_db("shoesdatabase") or die("Could not find database!");
 
 // Search shoes
 	if(isset($_POST['shoe_name'])) {
