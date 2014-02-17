@@ -1,9 +1,17 @@
 @import 'screen';
 
+@mixin players($height, $left, $top) {
+	height:$height;
+	position: relative;
+	left: $left;
+	top:$top;
+	display: none;
+}
+
 body{
 	background-color:black;
 	
-	#containerIndex{
+	#containerIndex {
 		width:960px;
 		height:680px;
 		background-image:url('../images/backgroundindex2.jpg');
@@ -12,72 +20,55 @@ body{
 		position:relative;
 		top:80px;
 
-	}
+		#players {
 
-	#LeBron{
-		height:300px;
-		position:relative;
-		left:50px;
-		top:-60px;
-		display:none;
-	}
+			#LeBron {
+				@include players(300px, 50px, -60px);
+			}
 
-	#LeBron2{
-		height:420px;
-		position:relative;
-		left:90px;
-		top:-20px;
-		display:none;
-	}
+			#LeBron2 {
+				@include players(420px, 90px, -20px);
+			}
 
 
-	#KD{
-		height:400px;
-		position:relative;
-		left:120px;
-		top:-65px;
-		display:none;
+			#KD {
+				@include players(400px, 120px, -65px);
+			}
+
+			#KD2 {
+				@include players(450px, 30px, -30px);
+			}
+
+			#Kobe {
+				@include players(400px, 105px, -10px);
+				width:250px;
+			}
+
+			#Kobe2 {
+				height:400px;
+				position:relative;
+				top:-25px;
+				display:none;
+			}
+		}
+
+		#Some {
+			color:white;
+			font-size:50pt;
+			font-weight:bolder;
+			position:relative;
+			left:150px;
+		}
+
+		#logo {
+			height:30px;
+			width:100px;
+			position:relative;
+			left:420px;
+			top:15px;
+			opacity:0.6;
+		}
+
 	}
 
-	#KD2{
-		height:450px;
-		position:relative;
-		left:30px;
-		top:-30px;
-		display:none;
-		padding:0;
-	}
-
-	#Kobe{
-		height:400px;
-		position:relative;
-		width:250px;
-		left:105px;
-		top:-10px;
-		display:none;
-	}
-
-	#Kobe2{
-		height:400px;
-		position:relative;
-		top:-25px;
-		display:none;
-	}
-
-	#Some{
-		color:white;
-		font-size:50pt;
-		font-weight:bolder;
-		position:relative;
-		left:150px;
-	}
-
-	#logo{
-		height:30px;
-		width:100px;
-		position:relative;
-		left:420px;
-		top:15px;
-		opacity:0.6;
-	}
 }
