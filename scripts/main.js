@@ -35,12 +35,12 @@ $(document).ready(function(){
 	$('#kobe').click(function(){
 		$('#search').hide();
 		$.ajax({
-			url: "kobe.php",
+			url: "shoes.php",
 			data: {category:'Kobe',
-				   pic1:'images/shoeLogo.png',
-				   pic2:'images/shoe4.png',
-				   pic3:'images/shoe2.png',
-				   pic4:'images/mambamamba.png',
+				   pic1:'"images/KobeLogo.png"',
+				   pic2:'"images/Kobe4.png"',
+				   pic3:'"images/Kobe2.png"',
+				   pic4:'"images/mambamamba.png"',
 					},
 			type:"GET",
 			success:function(result){

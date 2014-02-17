@@ -1,0 +1,42 @@
+#shoeContent{
+	width:100%;
+	position:relative;
+	top:100px;
+	
+	h1{
+	padding-bottom:90px;
+	}
+	#shoeMamba{
+	position: absolute;
+	top: -50px;
+	left: -230px;
+	}
+
+	#shoeMamba2{
+		position:absolute;
+		top: -70px;
+		right: -315px;
+		height:200px;
+		width:200px;
+	}
+
+	#shoeMamba3{
+		position: absolute;
+		top: -75px;
+		right: -120px;
+		height: 215px;
+		width: 233px;
+	}
+
+	#shoeMamba5{
+		position: absolute;
+		height: 120px;
+		left: -105px;
+		top: -40px;
+	}
+
+	table{
+		position:relative;
+		left:-245px;
+	}
+}
